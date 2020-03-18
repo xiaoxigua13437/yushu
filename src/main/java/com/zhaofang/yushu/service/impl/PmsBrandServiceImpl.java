@@ -21,7 +21,7 @@ public class PmsBrandServiceImpl implements PmsBrandService {
     }
 
     @Override
-    public int CreateBrand(PmsBrand brand) {
+    public int createBrand(PmsBrand brand) {
         return brandMapper.insertSelective(brand);
     }
 
@@ -33,17 +33,17 @@ public class PmsBrandServiceImpl implements PmsBrandService {
 
     @Override
     public int deleteBrand(Long id) {
-
         return brandMapper.deleteByPrimaryKey(id);
-
     }
 
     @Override
-    public List<PmsBrand> listPmsBrand(int pageNum, int pageSize) {
+    public List<PmsBrand> listBrand(int pageNum, int pageSize) {
         PageHelper.startPage(pageNum, pageSize);
-        return brandMapper.selectByExample(new PmsBrandExample());    }
+        return brandMapper.selectByExample(new PmsBrandExample());
+    }
 
     @Override
     public PmsBrand getBrand(Long id) {
-        return brandMapper.selectByPrimaryKey(id);    }
+        return brandMapper.selectByPrimaryKey(id);
+    }
 }

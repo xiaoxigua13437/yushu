@@ -4,7 +4,6 @@ import com.zhaofang.yushu.component.AutoIdempotentInterceptor;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
 import javax.annotation.Resource;
 
 @Configurable

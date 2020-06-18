@@ -7,6 +7,7 @@ import java.nio.CharBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
+import java.util.Map;
 
 public class ChannelNio {
 
@@ -56,7 +57,7 @@ public class ChannelNio {
     }
 
     /**
-     *
+     * nio 超大文件
      */
     public void SuperFileRead(){
         FileChannel in;
@@ -67,6 +68,10 @@ public class ChannelNio {
             if (mappedByteBuffer != null){
                 CharBuffer charBuffer = Charset.forName("utf-8").decode(mappedByteBuffer);
                 System.out.println(charBuffer.toString());
+
+
+
+
             }
 
         }catch (Exception e){

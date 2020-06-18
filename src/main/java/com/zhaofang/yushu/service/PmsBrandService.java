@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface PmsBrandService {
 
-    List<PmsBrand> listAllBrand();
+    List<PmsBrand>   listAllBrand();
 
     int createBrand(PmsBrand brand);
 

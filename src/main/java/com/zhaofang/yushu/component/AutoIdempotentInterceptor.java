@@ -18,6 +18,8 @@ import java.lang.reflect.Method;
 
 /**
  * 拦截器
+ * @author yushu
+ *
  */
 @Component
 public class AutoIdempotentInterceptor implements HandlerInterceptor {

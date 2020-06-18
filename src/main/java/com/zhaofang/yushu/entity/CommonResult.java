@@ -3,6 +3,7 @@ package com.zhaofang.yushu.entity;
 
 /**
  * 通用返回对象
+ * @author yushu
  */
 public class CommonResult<T> {
 
@@ -100,6 +101,7 @@ public class CommonResult<T> {
     public static <T> CommonResult<T> forbidden(T data) {
         return new CommonResult<T>(ResultCode.FORBIDDEN.getCode(), ResultCode.FORBIDDEN.getMessage(), data);
     }
+
 
     public long getCode() {
         return code;

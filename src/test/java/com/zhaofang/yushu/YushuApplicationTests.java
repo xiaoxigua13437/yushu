@@ -1,13 +1,18 @@
 package com.zhaofang.yushu;
 
+//import com.zhaofang.yushu.common.BackProperties;
 import com.zhaofang.yushu.entity.User;
+import com.zhaofang.yushu.service.TokenService;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.util.Assert;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,13 +22,23 @@ import java.nio.CharBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
+//import java.time.Instant;
+//import java.time.ZoneId;
+import java.util.Date;
 import java.util.Map;
+import java.util.Queue;
+import java.util.Random;
+import java.util.concurrent.BlockingDeque;
+import java.util.concurrent.LinkedBlockingDeque;
 
 @SpringBootTest
 class YushuApplicationTests {
 
     //模拟数据库存储
     private static ThreadLocal<Map<String,String>>  threadLocal = new ThreadLocal<Map<String, String>>();
+
+    @Autowired
+//    private BackProperties backProperties;
 
     @Test
     void contextLoads() {
@@ -171,9 +186,50 @@ class YushuApplicationTests {
                 }
             }
 
+            @Test
+            public void test6(){
+
+                Integer c = 15;
+                Date date = new Date();
+                Long startTime = Long.valueOf(date.getTime());
+                System.out.println("startTime:"+startTime);
+                Long endTime = Long.valueOf(date.getTime() -c.intValue() * 60 * 1000L);
+
+                Long tiem = startTime -15 * 60 * 1000L;
+                System.out.println("tiem:" +tiem);
+                System.out.println("endTime:"+endTime);
+
+            }
+
+            @Test
+            public void testAssert(){
+//                int b = 1;
+//                Assert.isTrue(b !=1,"b不等于1");
+//                String a = "aaa";
+//                Assert.isNull(a,"a的值为空");
+
+//                System.out.println(Instant.now().atZone(ZoneId.systemDefault()));
+//                StringBuilder builder = new StringBuilder();
+//                Random random = new Random();
+//                for (int i = 0; i < 10; i++){
+//                    builder.append(random.nextInt(6));
+//                }
 
 
 
+//                int a = 2;
+//                int b = a++ << ++a + ++a;
+//                System.out.println(b);
+
+
+                //查找指定字符或者字符串在字符串中第一次出现的位置的索引,未找到返回-1
+//                String a = "abc";
+//                System.out.println(a.indexOf("a",2));
+
+
+
+
+            }
 
 
 

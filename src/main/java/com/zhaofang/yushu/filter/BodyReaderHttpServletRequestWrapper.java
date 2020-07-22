@@ -1,14 +1,16 @@
 package com.zhaofang.yushu.filter;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import javax.servlet.ReadListener;
+import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.nio.charset.Charset;
+
 
 /**
  * 拦截请求，添加自定义请求逻辑(获取请求参数)
@@ -23,24 +25,70 @@ public class BodyReaderHttpServletRequestWrapper extends HttpServletRequestWrapp
 
     private final byte[] body;
 
-    public BodyReaderHttpServletRequestWrapper(HttpServletRequest request, byte[] body) {
+    public BodyReaderHttpServletRequestWrapper(HttpServletRequest request) {
         super(request);
         //获取请求参数值
         this.body = getBodyString(request).getBytes(Charset.forName("utf-8"));
-
+        //将值写入线程变量中
         try {
-            String params = new String(body,"utf-8");
+            String paramters = new String(body,"utf-8");
             if (logger.isDebugEnabled()){
-                logger.debug("请求参数{}" + params);
+                logger.debug("请求参数{}" + paramters);
             }
-
+            //获取请求参数
+            BodyReaderFilter.addValueToMyThreadLocal("requestParamters",paramters);
 
         } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
+            BodyReaderFilter.addValueToMyThreadLocal("requestParamters","{}");
         }
 
     }
 
+
+    /**
+     *  继承实现getReader()重写逻辑，自定义的HttpServletRequestWrapper将原始的HttpServletRequest对象进行再次封装
+     * @return
+     * @throws IOException
+     */
+    @Override
+    public BufferedReader getReader() throws IOException{
+        return new BufferedReader(new InputStreamReader(getInputStream()));
+    }
+
+
+    /**
+     * 将body体中的字符串转换为字节流
+     * @return
+     * @throws IOException
+     */
+    @Override
+    public ServletInputStream getInputStream() throws IOException {
+
+        final ByteArrayInputStream bais = new ByteArrayInputStream(body);
+
+        return new ServletInputStream() {
+
+            @Override
+            public int read() throws IOException {
+                return bais.read();
+            }
+
+            @Override
+            public boolean isFinished() {
+                return false;
+            }
+
+            @Override
+            public boolean isReady() {
+                return false;
+            }
+
+            @Override
+            public void setReadListener(ReadListener readListener) {
+
+            }
+        };
+    }
 
 
 

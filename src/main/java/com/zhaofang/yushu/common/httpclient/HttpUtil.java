@@ -1,6 +1,7 @@
 package com.zhaofang.yushu.common.httpclient;
 
 import com.alibaba.fastjson.JSONObject;
+import com.zhaofang.yushu.common.regular.PatternUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import javax.net.ssl.*;
@@ -8,10 +9,14 @@ import java.io.*;
 import java.net.ConnectException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.security.KeyStore;
 import java.security.SecureRandom;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateFactory;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 网络请求工具类
@@ -22,6 +27,11 @@ import java.security.cert.CertificateFactory;
 public abstract class HttpUtil {
 
     public static Logger log = LoggerFactory.getLogger(HttpUtil.class);
+
+    //用来存储cookie值
+    public static ThreadLocal<Map<String,Object>> saveCookieByMap = new ThreadLocal<>();
+
+
     private final static HostnameVerifier DO_NOT_VERIFY = new HostnameVerifier() {
         public boolean verify(String hostname, SSLSession session) {
             return true;
@@ -266,7 +276,7 @@ public abstract class HttpUtil {
             conn.setRequestProperty("user-agent",
                     "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)");
             conn.setRequestProperty("Content-Type", "text/plain;charset=utf-8");
-
+            conn.setRequestProperty("Cookie",HttpUtil.getCookieByThreadLocal("cookies").toString());
             conn.setDoOutput(true);
             conn.setDoInput(true);
             conn.setUseCaches(false);
@@ -300,6 +310,7 @@ public abstract class HttpUtil {
             inputStream.close();
             inputStream = null;
             conn.disconnect();
+            HttpUtil.destroy();
         } catch (ConnectException ce) {
             log.error("server connection timed out.");
         } catch (Exception e) {
@@ -364,6 +375,181 @@ public abstract class HttpUtil {
 
 
 
+    /**
+     * post方式请求获取cookie
+     *
+     * @param url 链接
+     * @param params 请求参数
+     * @param headers 请求头部参数
+     * @param charSet 编码
+     * @return cookie
+     */
+    public static String getCookieByPost(String url, Map<String ,String> params, Map<String ,String>headers, String charSet) {
+        try {
+            URL url1=new URL(url);
+            HttpURLConnection conn=(HttpURLConnection) url1.openConnection();
+            conn.setRequestMethod("POST");
+            //输入参数
+            conn.setDoOutput(true);
+            //不使用缓存
+            conn.setUseCaches(false);
+            conn.setInstanceFollowRedirects(false);
+            conn.setConnectTimeout(60*1000);
+            for (String header : headers.keySet()) {
+                conn.setRequestProperty(header, headers.get(header));
+            }
+            conn.connect();
+            if(params!=null && params.keySet().size()>0) {
+                StringBuilder sb=new StringBuilder();
+                for (String key : params.keySet()) {
+                    sb.append(key+"="+ URLEncoder.encode(params.get(key),charSet)+"&");
+                }
+                String param=sb.delete(sb.length()-1, sb.length()).toString();
+                DataOutputStream out=new DataOutputStream(conn.getOutputStream());
+                out.writeBytes(param);
+                out.flush();
+                out.close();
+            }
+            String cookie="";
+            Map<String, List<String>> respone_headers=conn.getHeaderFields();
+            for (String key : respone_headers.keySet()) {
+            //System.err.println(respone_headers.get(key));
+                if(key!=null &&key.equals("Set-Cookie")) {
+                    List<String> string = respone_headers.get(key);
+                    StringBuilder builder = new StringBuilder();
+                    for (String str : string) {
+                        System.err.println(str);
+                        builder.append(str).toString();
+                    }
+                    cookie=builder.toString();
+                }
+            }
+            conn.disconnect();
+            return cookie;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+
+    }
+
+
+
+    /**
+     * 发起http请求获取cookie并存储到线程变量
+     *
+     * @param requestUrl 请求地址
+     * @param requestMethod 请求方式（GET、POST）
+     * @param outputStr 提交的数据
+     * @return JSONObject(通过JSONObject.get(key)的方式获取json对象的属性值)
+     */
+    public static void getCookieByPost(String requestUrl, String requestMethod, String outputStr) {
+        String cookie="";
+        HttpURLConnection conn;
+        try {
+            httpsValid();
+            URL url = new URL(requestUrl);
+            // 通过请求地址判断请求类型(http或者是https)
+            if (url.getProtocol().toLowerCase().equals("https")) {
+                HttpsURLConnection https = (HttpsURLConnection) url.openConnection();
+                // 设置域名检验
+                https.setHostnameVerifier(DO_NOT_VERIFY);
+                conn = https;
+            } else {
+                conn = (HttpURLConnection) url.openConnection();
+            }
+            // 设置通用的请求属性
+            conn.setRequestProperty("accept", "*/*");
+            conn.setRequestProperty("connection", "Keep-Alive");
+            conn.setRequestProperty("user-agent",
+                    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)");
+            conn.setRequestProperty("Content-Type", "text/plain;charset=utf-8");
+
+            conn.setDoOutput(true);
+            conn.setDoInput(true);
+            conn.setUseCaches(false);
+            // 设置请求方式（GET/POST）
+            conn.setRequestMethod(requestMethod);
+
+            if (requestMethod.equalsIgnoreCase("GET")) {
+                conn.connect();
+            }
+
+            // 当有数据需要提交时
+            if (null != outputStr) {
+                OutputStream outputStream = conn.getOutputStream();
+                // 注意编码格式，防止中文乱码
+                outputStream.write(outputStr.getBytes("UTF-8"));
+                outputStream.close();
+            }
+            conn.disconnect();
+
+            Map<String, List<String>> responseHeaders=conn.getHeaderFields();
+            for (String key : responseHeaders.keySet()) {
+                //System.err.println(responseHeaders.get(key));
+                if(key!=null &&key.equals("Set-Cookie")) {
+                    List<String> string = responseHeaders.get(key);
+                    StringBuilder builder = new StringBuilder();
+                    for (String str : string) {
+                        builder.append(str).toString();
+                    }
+                    cookie=builder.toString();
+                    //存储到线程变量
+                    HttpUtil.addCookieToThreadLocal("cookies",cookie);
+                }
+            }
+
+        } catch (ConnectException ce) {
+            log.error("server connection timed out.");
+        } catch (Exception e) {
+            log.error("http request error:", e);
+        }
+
+    }
+
+
+    /**
+     * 添加值到线程变量
+     * @param key
+     * @param value
+     */
+    public static void addCookieToThreadLocal(String key,String value){
+        Map<String,Object> map = saveCookieByMap.get();
+        if (map == null){
+            map = new HashMap<>();
+        }
+        map.put(key,value);
+        saveCookieByMap.set(map);
+
+    }
+
+    /**
+     * 获取线程变量的值
+     * @param key
+     * @return
+     */
+    public static Object getCookieByThreadLocal(String key){
+        return saveCookieByMap.get().get(key);
+    }
+
+
+    /**
+     * 销毁线程变量
+     */
+    public static void destroy(){
+        saveCookieByMap.remove();
+    }
+
+
+
+
+
+
+
+
+
+
+
     /*
      * unicode编码转中文
      */
@@ -391,6 +577,7 @@ public abstract class HttpUtil {
     public static void main(String[] args) {
 
         String rsUrl = "http://192.168.83.55:8080/noc/dwr/call/plaincall/Jes.save.dwr\n";
+        String reUrl = "http://192.168.83.55:8080/noc/dwr/call/plaincall/Jes.page.dwr\n";
         String requestMethod = "POST";
         String requestStr = "callCount=1\n" +
                 "page=/noc/jesacl/html/login.html\n" +
@@ -406,8 +593,45 @@ public abstract class HttpUtil {
                 "c0-e4=number:0\n" +
                 "c0-param1=Object_Object:{loginid:reference:c0-e1, password:reference:c0-e2, code_input:reference:c0-e3, se:reference:c0-e4}\n" +
                 "batchId=7";
-        String cookie = "43E5CA8CBBAD9A35F78A9C0D365D1B3E";
-        String res = HttpUtil.httpRequest(rsUrl,requestMethod,requestStr,cookie).toJSONString();
+
+
+        String responseStr = "callCount=1\n" +
+                "page=/noc/noc/pub/nocholiday.html\n" +
+                "httpSessionId=\n" +
+                "scriptSessionId=C6BB6F9409D73C784FA2D4702AC5EFA6179\n" +
+                "c0-scriptName=Jes\n" +
+                "c0-methodName=page\n" +
+                "c0-id=0\n" +
+                "c0-e1=string:\n" +
+                "c0-e2=string:\n" +
+                "c0-e3=string:holiday_query_sql%40noc\n" +
+                "c0-e4=null:null\n" +
+                "c0-e5=null:null\n" +
+                "c0-param0=Object_Object:{usname:reference:c0-e1, oname:reference:c0-e2, sql:reference:c0-e3, key:reference:c0-e4, se:reference:c0-e5}\n" +
+                "c0-param1=number:1\n" +
+                "c0-param2=number:15\n" +
+                "batchId=1";
+         HttpUtil.getCookieByPost(rsUrl,requestMethod,requestStr);
+
+         String result = HttpUtil.httpRequestByString(reUrl,requestMethod,responseStr);
+         //正则匹配{}中的内容
+         String reg = "(\\{([^\\}]+)\\})";
+
+//        String regex = "(?<=(dwr.engine._remoteHandleCallback\\())(.+?)(?=\\))";
+
+        //去除{}
+//       String regular ="(\\{|})";
+         String content = PatternUtil.regularFindWrite(result,reg);
+
+         content = content.replaceAll("list.+?,", "");
+         System.out.println(content);
+
+         JSONObject jsonObject = JSONObject.parseObject(content);
+
+
+
+
+
     }
 
 }

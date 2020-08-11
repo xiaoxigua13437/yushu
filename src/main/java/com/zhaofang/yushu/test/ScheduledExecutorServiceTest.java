@@ -1,6 +1,7 @@
 package com.zhaofang.yushu.test;
 
 
+import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
@@ -14,6 +15,9 @@ public class ScheduledExecutorServiceTest {
 
 
     private static ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
+
+    //用来存储时间变量
+    private static ThreadLocal<Map<String,Object>> threadLocal = new ThreadLocal<Map<String, Object>>();
 
     /**
      * 设置了 ScheduledExecutorService ，在 1 小时内每 10 秒钟蜂鸣一次
@@ -43,6 +47,9 @@ public class ScheduledExecutorServiceTest {
      public static void main(String[] args){
 
         new ScheduledExecutorServiceTest().beerForHour();
+
+
+
 
      }
 

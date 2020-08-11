@@ -41,10 +41,10 @@ public class WlanScopeLogInterceptor extends LogInterceptor implements HandlerIn
         String url = request.getRequestURI();
         String requestType = LoggerUtils.getRequestType(request);
         String method = request.getMethod();
-        String requestParamters = ParamUtil.StringParam(BodyReaderFilter.getValueMyThreadLocal("requestParamters"));
-        Long requestTime = ParamUtil.LongParam(BodyReaderFilter.getValueMyThreadLocal("requestBeginTime"));
-        String responseCode = ParamUtil.StringParam(BodyReaderFilter.getValueMyThreadLocal("responseCode"));
-        String responseParamters = ParamUtil.StringParam(BodyReaderFilter.getValueMyThreadLocal("responseParamters"));
+        String requestParamters = ParamUtil.StringParam(BodyReaderFilter.getValueToMyThreadLocal("requestParamters"));
+        Long requestTime = ParamUtil.LongParam(BodyReaderFilter.getValueToMyThreadLocal("requestBeginTime"));
+        String responseCode = ParamUtil.StringParam(BodyReaderFilter.getValueToMyThreadLocal("responseCode"));
+        String responseParamters = ParamUtil.StringParam(BodyReaderFilter.getValueToMyThreadLocal("responseParamters"));
 
         //将数据保存到线程变量
         ApiAccessLog apiAccessLog = new ApiAccessLog();

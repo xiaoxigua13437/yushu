@@ -19,7 +19,6 @@
     </properties>
 
     <dependencies>
-
         <!-- springboot 通用模块 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -125,7 +124,7 @@
         </dependency>
 
 
-        <!--Swagger-UI API文档生产工具-->
+        <!-- Swagger-UI API文档生产工具 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -177,6 +176,12 @@
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>2.3.0.RELEASE</version>
+        </dependency>
 
 
     </dependencies>

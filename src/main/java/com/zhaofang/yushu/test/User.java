@@ -25,13 +25,16 @@ public class User {
     @SneakyThrows
     public static void main(String[] args){
 
-//        System.out.println( new User(1,14));
-//        System.out.println("--------------");
-//        System.out.println(User.of(2,10));
-//        System.out.println("--------------");
-//        System.out.println(new User());
-//        System.out.println("--------------");
-//        System.out.println(new User(3,12,"玉书"));
+
+        System.out.println("CPU可用核心数:" + Runtime.getRuntime().availableProcessors());
+
+       /* System.out.println( new User(1,14));
+        System.out.println("--------------");
+        System.out.println(User.of(2,10));
+        System.out.println("--------------");
+        System.out.println(new User());
+        System.out.println("--------------");
+        System.out.println(new User(3,12,"玉书"));
 
         User user = User.builder()
                                 .testOccupations("theShy")
@@ -41,7 +44,7 @@ public class User {
                                 .name("yuShu")
                                 .build();
 
-        System.out.println(user);
+        System.out.println(user);*/
 
     }
 

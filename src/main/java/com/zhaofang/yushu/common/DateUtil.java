@@ -141,6 +141,7 @@ public class DateUtil  {
             SimpleDateFormat df = new SimpleDateFormat(pattern);
             returnValue = df.format(date);
         }
+        System.out.println(returnValue);
         return returnValue;
     }
 
@@ -183,6 +184,7 @@ public class DateUtil  {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         cal.add(Calendar.YEAR, n);
+        System.out.println(cal.getTime());
         return cal.getTime();
     }
 
@@ -685,8 +687,12 @@ public class DateUtil  {
         // } catch (ParseException e) {
         // e.printStackTrace();
         // }
-        SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        System.out.println(sd.format(addYear(new Date(), 1)));
+        /*SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(sd.format(addYear(new Date(), 1)));*/
+
+        DateUtil.getNowString("yyyy-MM-dd");
+
+
     }
 
 

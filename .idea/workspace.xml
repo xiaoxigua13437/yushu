@@ -2,89 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f5e064c-846b-4879-a710-38a82582b65a" name="Default Changelist" comment="统一日志处理切面流程">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_12_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/base/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/base/BaseErrMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/base/ClientBaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/ListUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/httpclient/MyX509TrustManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/entity/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/RegularTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config-wlanscope.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/yushu.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/base/BaseController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/base/BaseErrMsg.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/DateUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/JsonResponseUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/ListUtils$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/ListUtils$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/ListUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/ParamUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/PropertiesLoader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/StringUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/httpclient/HttpClientHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/httpclient/HttpUtil$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/httpclient/HttpUtil$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/httpclient/HttpUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/httpclient/MyX509TrustManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/httpclient/SSLUtils$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/httpclient/SSLUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/regular/PatternUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/threadpool/ThreadUtil$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/common/threadpool/ThreadUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/config/ConfigPropertiesConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/dto/ResponseInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/entity/ResponseResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/exception/ServiceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/filter/BodyReaderFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/filter/BodyReaderHttpServletRequestWrapper$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/filter/BodyReaderHttpServletRequestWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/interceptor/LogInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/interceptor/WlanScopeLogInterceptor$SaveLogThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/interceptor/WlanScopeLogInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/service/ApiAccessLogRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/service/ApiAccessLogService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/RegularTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config-wlanscope.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/httpclient/HttpClientHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/httpclient/HttpClientHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/httpclient/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/httpclient/HttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/regular/PatternUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/regular/PatternUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/component/WebLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/component/WebLogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/interceptor/LogInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/interceptor/LogInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/interceptor/WlanScopeLogInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/interceptor/WlanScopeLogInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/ScheduledExecutorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/ScheduledExecutorServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhaofang/yushu/YushuApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zhaofang/yushu/YushuApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/component/WebLogAspect$LoggerInfoComsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/component/WebLogAspect$LoggerInfoComsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/component/WebLogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/component/WebLogAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/service/impl/ApiAccessLogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/service/impl/ApiAccessLogServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/service/impl/ApiAccessLogServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/ScheduledExecutorServiceTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/ScheduledExecutorServiceTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/ScheduledExecutorServiceTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/ScheduledExecutorServiceTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/ScheduledExecutorServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/ScheduledExecutorServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/test/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zhaofang/yushu/YushuApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zhaofang/yushu/YushuApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yushu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yushu.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,24 +11,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
@@ -117,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -134,14 +43,6 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="yushu" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -150,23 +51,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.16601562" />
-    <property name="project.structure.side.proportion" value="0.5568581" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
-  </component>
-  <component name="RestClientSettings">
-    <option name="REQUEST_HISTORY">
-      <list>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8081/business/get/token" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.StringUtil">
     <configuration name="DateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -244,10 +132,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.StringUtil" />
-        <item itemvalue="Application.HttpUtil" />
-        <item itemvalue="Application.DateUtil" />
         <item itemvalue="Application.RegularTest" />
         <item itemvalue="Application.PatternUtil" />
+        <item itemvalue="Application.HttpUtil" />
+        <item itemvalue="Application.DateUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -291,90 +179,7 @@
       <workItem from="1584426007881" duration="1259000" />
       <workItem from="1584427269910" duration="15887000" />
       <workItem from="1584514043882" duration="457000" />
-      <workItem from="1584514522234" duration="13317000" />
-      <workItem from="1584600978574" duration="8854000" />
-      <workItem from="1584942763157" duration="316000" />
-      <workItem from="1584943109202" duration="1713000" />
-      <workItem from="1584951088830" duration="2612000" />
-      <workItem from="1585099596319" duration="480000" />
-      <workItem from="1585101631860" duration="316000" />
-      <workItem from="1585190844655" duration="2676000" />
-      <workItem from="1585205455597" duration="7591000" />
-      <workItem from="1585532443604" duration="3962000" />
-      <workItem from="1585558838272" duration="5459000" />
-      <workItem from="1586223508767" duration="9000" />
-      <workItem from="1586309044021" duration="4021000" />
-      <workItem from="1586326859198" duration="11286000" />
-      <workItem from="1586484088021" duration="7487000" />
-      <workItem from="1586829731936" duration="7673000" />
-      <workItem from="1587086482381" duration="9134000" />
-      <workItem from="1587348930071" duration="1181000" />
-      <workItem from="1587433571015" duration="9096000" />
-      <workItem from="1587544707758" duration="1180000" />
-      <workItem from="1587864488992" duration="2873000" />
-      <workItem from="1587959056744" duration="950000" />
-      <workItem from="1588058484167" duration="589000" />
-      <workItem from="1588734063657" duration="8062000" />
-      <workItem from="1589183043492" duration="580000" />
-      <workItem from="1589247771770" duration="13790000" />
-      <workItem from="1589766770690" duration="17497000" />
-      <workItem from="1590027761914" duration="8925000" />
-      <workItem from="1590396843031" duration="3205000" />
-      <workItem from="1590461490570" duration="4102000" />
-      <workItem from="1590976282606" duration="20000" />
-      <workItem from="1590994346200" duration="35000" />
-      <workItem from="1591069168892" duration="798000" />
-      <workItem from="1591069999099" duration="3109000" />
-      <workItem from="1591087175142" duration="960000" />
-      <workItem from="1591176247187" duration="22000" />
-      <workItem from="1591323795445" duration="12588000" />
-      <workItem from="1591347154753" duration="2473000" />
-      <workItem from="1591775183797" duration="216000" />
-      <workItem from="1591775758923" duration="333000" />
-      <workItem from="1591857665949" duration="277000" />
-      <workItem from="1591858166510" duration="79000" />
-      <workItem from="1591948225273" duration="6313000" />
-      <workItem from="1592187894201" duration="15893000" />
-      <workItem from="1592276996747" duration="11475000" />
-      <workItem from="1592357546608" duration="7471000" />
-      <workItem from="1592445790882" duration="14418000" />
-      <workItem from="1592535824602" duration="7050000" />
-      <workItem from="1592789516537" duration="9115000" />
-      <workItem from="1592962068603" duration="1461000" />
-      <workItem from="1593312615221" duration="4137000" />
-      <workItem from="1593399470528" duration="7729000" />
-      <workItem from="1594179902323" duration="2449000" />
-      <workItem from="1594345904837" duration="1753000" />
-      <workItem from="1594866754862" duration="5863000" />
-      <workItem from="1594953557646" duration="2151000" />
-      <workItem from="1595208748159" duration="734000" />
-      <workItem from="1595295018467" duration="2582000" />
-      <workItem from="1595299414962" duration="9211000" />
-      <workItem from="1595386711604" duration="11158000" />
-      <workItem from="1595406599309" duration="8090000" />
-      <workItem from="1595474811291" duration="783000" />
-      <workItem from="1595483422013" duration="10167000" />
-      <workItem from="1595558664393" duration="3656000" />
-      <workItem from="1595831847226" duration="7606000" />
-      <workItem from="1595840625717" duration="1769000" />
-      <workItem from="1595842896281" duration="541000" />
-      <workItem from="1595924914591" duration="1057000" />
-      <workItem from="1595927124578" duration="2738000" />
-      <workItem from="1595990541912" duration="22135000" />
-      <workItem from="1596162889184" duration="11519000" />
-      <workItem from="1596418614723" duration="11054000" />
-      <workItem from="1596504431737" duration="6988000" />
-      <workItem from="1596591340441" duration="621000" />
-      <workItem from="1596618307887" duration="3646000" />
-      <workItem from="1596685707994" duration="224000" />
-      <workItem from="1596699762046" duration="5979000" />
-      <workItem from="1596768675827" duration="4012000" />
-      <workItem from="1597022949849" duration="10806000" />
-      <workItem from="1597111608946" duration="9330000" />
-      <workItem from="1597127736446" duration="54000" />
-      <workItem from="1597128283385" duration="4022000" />
-      <workItem from="1597136033763" duration="14000" />
-      <workItem from="1597136106799" duration="243000" />
+      <workItem from="1584514522234" duration="1119000" />
     </task>
     <task id="LOCAL-00001" summary="SpringBoot应用整合ELK实现日志收集">
       <created>1584500148033</created>
@@ -383,119 +188,7 @@
       <option name="project" value="LOCAL" />
       <updated>1584500148033</updated>
     </task>
-    <task id="LOCAL-00002" summary="SpringBoot 整合Swagger-ui">
-      <created>1584515785604</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1584515785604</updated>
-    </task>
-    <task id="LOCAL-00003" summary="添加日志拦截器并批量保存日志">
-      <created>1592444978146</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1592444978146</updated>
-    </task>
-    <task id="LOCAL-00004" summary="拦截请求,添加自定义请求逻辑(获取请求参数)&#10;步骤：将取出来的字符串，再次转换成流，然后把它放入到新的request对象中">
-      <created>1595401943970</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1595401943970</updated>
-    </task>
-    <task id="LOCAL-00005" summary="拦截请求,添加自定义请求逻辑(获取请求参数)">
-      <created>1595402230906</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1595402230906</updated>
-    </task>
-    <task id="LOCAL-00006" summary="参数转换工具类">
-      <created>1595402801454</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1595402801454</updated>
-    </task>
-    <task id="LOCAL-00007" summary="基于jpa数据处理:请求日志的单条录入和批量保存">
-      <created>1595403463928</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1595403463928</updated>
-    </task>
-    <task id="LOCAL-00008" summary="统一线程池工具类">
-      <created>1595474716423</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1595474716423</updated>
-    </task>
-    <task id="LOCAL-00009" summary="动态读取配置文件工具类">
-      <created>1595485031975</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1595485031976</updated>
-    </task>
-    <task id="LOCAL-00010" summary="日志拦截器对所有请求这个链接的请求进行拦截">
-      <created>1595489115063</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1595489115063</updated>
-    </task>
-    <task id="LOCAL-00011" summary="网络请求工具类">
-      <created>1595842678857</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1595842678857</updated>
-    </task>
-    <task id="LOCAL-00012" summary="正则表达式匹配规则">
-      <created>1595925852333</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1595925852333</updated>
-    </task>
-    <task id="LOCAL-00013" summary="新增正则匹配规则">
-      <created>1596015757888</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1596015757888</updated>
-    </task>
-    <task id="LOCAL-00014" summary="获取cookie值并保存到线程变量(模拟请求登陆)">
-      <created>1596505229088</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1596505229088</updated>
-    </task>
-    <task id="LOCAL-00015" summary="统一时间处理类(重构后)">
-      <created>1596620432553</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1596620432553</updated>
-    </task>
-    <task id="LOCAL-00016" summary="拦截请求,添加自定义逻辑(获取请求参数)重构后">
-      <created>1597127591779</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1597127591780</updated>
-    </task>
-    <task id="LOCAL-00017" summary="自定义了一个过滤器将流先在过滤器里面获取到流并重新写入(方便持续获取)">
-      <created>1597135864808</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1597135864808</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,13 +222,6 @@
             </State>
           </value>
         </entry>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="OPEN_TABS">
@@ -546,146 +232,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SpringBoot应用整合ELK实现日志收集" />
-    <MESSAGE value="SpringBoot 整合Swagger-ui" />
-    <MESSAGE value="添加日志拦截器并批量保存日志" />
-    <MESSAGE value="拦截请求,添加自定义请求逻辑(获取请求参数)&#10;步骤：将取出来的字符串，再次转换成流，然后把它放入到新的request对象中" />
-    <MESSAGE value="拦截请求,添加自定义请求逻辑(获取请求参数)" />
-    <MESSAGE value="统一日志处理切面流程" />
-    <MESSAGE value="参数转换工具类" />
-    <MESSAGE value="基于jpa数据处理:请求日志的单条录入和批量保存" />
-    <MESSAGE value="统一线程池工具类" />
-    <MESSAGE value="动态读取配置文件工具类" />
-    <MESSAGE value="日志拦截器对所有请求这个链接的请求进行拦截" />
-    <MESSAGE value="网络请求工具类" />
-    <MESSAGE value="正则表达式匹配规则" />
-    <MESSAGE value="新增正则匹配规则" />
-    <MESSAGE value="获取cookie值并保存到线程变量(模拟请求登陆)" />
-    <MESSAGE value="统一时间处理类(重构后)" />
-    <MESSAGE value="拦截请求,添加自定义逻辑(获取请求参数)重构后" />
-    <MESSAGE value="自定义了一个过滤器将流先在过滤器里面获取到流并重新写入(方便持续获取)" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义了一个过滤器将流先在过滤器里面获取到流并重新写入(方便持续获取)" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot应用整合ELK实现日志收集" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="177" key="#Notifications" timestamp="1595402183016">
+    <state x="669" y="234" key="MultipleFileMergeDialog" timestamp="1597136947604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="177" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1595402183016" />
-    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1595488424064">
+    <state x="669" y="234" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597136947604" />
+    <state x="461" y="151" key="SettingsEditor" timestamp="1597136479852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595488424064" />
-    <state x="811" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592468175606">
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597136479852" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597136856270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="811" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592468175606" />
-    <state x="726" y="377" width="491" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596441803952">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597136856270" />
+    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597136938686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="726" y="377" width="491" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1596441803952" />
-    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595484980413">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595484980413" />
-    <state x="626" y="45" width="1126" height="946" key="CommitChangelistDialog2" timestamp="1597135863587">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="626" y="45" width="1126" height="946" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597135863587" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1595485123309">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595485123309" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1597110470451">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597110470451" />
-    <state width="1876" height="205" key="GridCell.Tab.0.bottom" timestamp="1597111516296">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597111516296" />
-    <state width="1876" height="205" key="GridCell.Tab.0.center" timestamp="1597111516296">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597111516296" />
-    <state width="1876" height="205" key="GridCell.Tab.0.left" timestamp="1597111516296">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597111516296" />
-    <state width="1876" height="205" key="GridCell.Tab.0.right" timestamp="1597111516296">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597111516296" />
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1596178401081">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596178401081" />
-    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1596178401080">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596178401080" />
-    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1596178401080">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596178401080" />
-    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1596178401080">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596178401080" />
-    <state width="1876" height="342" key="GridCell.Tab.2.bottom" timestamp="1592276510856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592276510856" />
-    <state width="1876" height="342" key="GridCell.Tab.2.center" timestamp="1592276510856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592276510856" />
-    <state width="1876" height="342" key="GridCell.Tab.2.left" timestamp="1592276510856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592276510856" />
-    <state width="1876" height="342" key="GridCell.Tab.2.right" timestamp="1592276510856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592276510856" />
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1596093681385">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596093681385" />
-    <state x="628" y="241" key="RollbackChangesDialog" timestamp="1595403621369">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="628" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595403621369" />
-    <state x="461" y="151" key="SettingsEditor" timestamp="1597136045854">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597136045854" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597136117158">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597136117158" />
-    <state x="647" y="253" key="VcsDiffUtil.ChangesDialog" timestamp="1596015815728">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="647" y="253" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596015815728" />
-    <state x="309" y="101" key="com.intellij.ide.util.TipDialog" timestamp="1597023963558">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="309" y="101" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597023963558" />
-    <state x="690" y="283" key="extract.method.dialog" timestamp="1596165540596">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="283" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596165540596" />
-    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597136300860">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597136300860" />
-    <state x="330" y="220" key="new project wizard" timestamp="1595555435407">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="330" y="220" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1595555435407" />
-    <state x="616" y="235" key="run.anything.popup" timestamp="1596443807406">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596443807406" />
+    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597136938686" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

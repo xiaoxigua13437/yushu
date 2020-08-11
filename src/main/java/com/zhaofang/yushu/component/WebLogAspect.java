@@ -1,31 +1,21 @@
 package com.zhaofang.yushu.component;
 
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.core.util.URLUtil;
-import cn.hutool.json.JSONUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import com.zhaofang.yushu.common.LoggerUtils;
 import com.zhaofang.yushu.dto.ApiAccessLog;
-import com.zhaofang.yushu.dto.WebLog;
-import com.zhaofang.yushu.service.impl.ApiAccessLogService;
-import io.swagger.annotations.ApiOperation;
-import net.logstash.logback.marker.Markers;
+import com.zhaofang.yushu.service.ApiAccessLogService;
+//import io.swagger.annotations.ApiOperation;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.*;
-import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.core.annotation.Order;
-import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -79,7 +69,7 @@ public class WebLogAspect implements ApplicationContextAware, DisposableBean {
     public void doBefore(JoinPoint joinPoint) throws Throwable {
 
         long startTime = System.currentTimeMillis();//记录方法开始执行的时间
-        //获取当前请求对象
+        //获取当前请求对象,该类会暴露与线程绑定的RequestAttributes对象，什么意思呢？ 就是说web请求过来的数据可以跟线程绑定， 用户A，用户B分别请求过来，可以使用RequestContextHolder得到各个请求的数据
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
 
@@ -220,14 +210,14 @@ public class WebLogAspect implements ApplicationContextAware, DisposableBean {
     }
 
 
-
-
+    /**
+     * 钩子
+     * @throws Exception
+     */
     @Override
     public void destroy() throws Exception {
         scheduledExecutorService.shutdown();
     }
-
-
 
 
 

@@ -39,7 +39,7 @@ public abstract class LogInterceptor {
         if(this.logger.isDebugEnabled()) {
             long beginTime = ((Long)startTimeThreadLocal.get()).longValue();
             long endTime = System.currentTimeMillis();
-            this.logger.debug("计时结束：{}  耗时：{}  URI: {}  最大内存: {}m  已分配内存: {}m  已分配内存中的剩余空间: {}m", new Object[]{(new SimpleDateFormat("hh:mm:ss.SSS")).format(Long.valueOf(endTime)), DateUtil.formatDateTime(endTime - beginTime), request.getRequestURI(), Long.valueOf(Runtime.getRuntime().maxMemory() / 1024L / 1024L), Long.valueOf(Runtime.getRuntime().totalMemory() / 1024L / 1024L), Long.valueOf(Runtime.getRuntime().freeMemory() / 1024L / 1024L)});
+//            this.logger.debug("计时结束：{}  耗时：{}  URI: {}  最大内存: {}m  已分配内存: {}m  已分配内存中的剩余空间: {}m", new Object[]{(new SimpleDateFormat("hh:mm:ss.SSS")).format(Long.valueOf(endTime)), DateUtil.formatDateTime(endTime - beginTime), request.getRequestURI(), Long.valueOf(Runtime.getRuntime().maxMemory() / 1024L / 1024L), Long.valueOf(Runtime.getRuntime().totalMemory() / 1024L / 1024L), Long.valueOf(Runtime.getRuntime().freeMemory() / 1024L / 1024L)});
         }
 
     }

@@ -460,6 +460,13 @@ public abstract class HttpClientHelper {
         return result;
     }
 
+    /**
+     * 发送Https请求 ,请求格式String
+     *
+     * @param url
+     * @param jsonStr
+     * @return
+     */
     public static String sendPostRequestHttps(String url, String jsonStr) {
         HttpPost httpPost = new HttpPost(url);
         httpPost.setHeader("Content-Type", "application/json;charset=UTF-8");

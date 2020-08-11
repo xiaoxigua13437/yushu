@@ -310,7 +310,6 @@ public abstract class HttpUtil {
             inputStream.close();
             inputStream = null;
             conn.disconnect();
-            HttpUtil.destroy();
         } catch (ConnectException ce) {
             log.error("server connection timed out.");
         } catch (Exception e) {
@@ -443,7 +442,9 @@ public abstract class HttpUtil {
      * @param outputStr 提交的数据
      * @return JSONObject(通过JSONObject.get(key)的方式获取json对象的属性值)
      */
-    public static void getCookieByPost(String requestUrl, String requestMethod, String outputStr) {
+    public static String getCookieByPost(String requestUrl, String requestMethod, String outputStr) {
+
+        StringBuffer buffer = new StringBuffer();
         String cookie="";
         HttpURLConnection conn;
         try {
@@ -482,8 +483,21 @@ public abstract class HttpUtil {
                 outputStream.write(outputStr.getBytes("UTF-8"));
                 outputStream.close();
             }
-            conn.disconnect();
 
+            // 将返回的输入流转换成字符串
+            InputStream inputStream = conn.getInputStream();
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream, "utf-8");
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+            String reStr = null;
+            while ((reStr = bufferedReader.readLine()) != null) {
+                buffer.append(reStr);
+            }
+            bufferedReader.close();
+            inputStreamReader.close();
+            // 释放资源
+            inputStream.close();
+            inputStream = null;
             Map<String, List<String>> responseHeaders=conn.getHeaderFields();
             for (String key : responseHeaders.keySet()) {
                 //System.err.println(responseHeaders.get(key));
@@ -498,12 +512,14 @@ public abstract class HttpUtil {
                     HttpUtil.addCookieToThreadLocal("cookies",cookie);
                 }
             }
+            conn.disconnect();
 
         } catch (ConnectException ce) {
             log.error("server connection timed out.");
         } catch (Exception e) {
             log.error("http request error:", e);
         }
+        return buffer.toString();
 
     }
 
@@ -539,9 +555,6 @@ public abstract class HttpUtil {
     public static void destroy(){
         saveCookieByMap.remove();
     }
-
-
-
 
 
 
@@ -587,7 +600,7 @@ public abstract class HttpUtil {
                 "c0-methodName=save\n" +
                 "c0-id=0\n" +
                 "c0-param0=string:login%40acl\n" +
-                "c0-e1=string:anxuemei_cb\n" +
+                "c0-e1=string:\n" +
                 "c0-e2=string:123456\n" +
                 "c0-e3=string:\n" +
                 "c0-e4=number:0\n" +
@@ -613,20 +626,20 @@ public abstract class HttpUtil {
                 "batchId=1";
          HttpUtil.getCookieByPost(rsUrl,requestMethod,requestStr);
 
-         String result = HttpUtil.httpRequestByString(reUrl,requestMethod,responseStr);
+//         String result = HttpUtil.httpRequestByString(reUrl,requestMethod,responseStr);
          //正则匹配{}中的内容
-         String reg = "(\\{([^\\}]+)\\})";
+//         String reg = "(\\{([^\\}]+)\\})";
 
 //        String regex = "(?<=(dwr.engine._remoteHandleCallback\\())(.+?)(?=\\))";
 
         //去除{}
 //       String regular ="(\\{|})";
-         String content = PatternUtil.regularFindWrite(result,reg);
-
-         content = content.replaceAll("list.+?,", "");
-         System.out.println(content);
-
-         JSONObject jsonObject = JSONObject.parseObject(content);
+//         String content = PatternUtil.regularFindWrite(result,reg);
+//
+//         content = content.replaceAll("list.+?,", "");
+//         System.out.println(content);
+//
+//         JSONObject jsonObject = JSONObject.parseObject(content);
 
 
 

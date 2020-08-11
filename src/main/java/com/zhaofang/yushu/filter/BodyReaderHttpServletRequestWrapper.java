@@ -20,35 +20,44 @@ import java.nio.charset.Charset;
 public class BodyReaderHttpServletRequestWrapper extends HttpServletRequestWrapper {
 
     private final static Logger logger= LoggerFactory.getLogger(BodyReaderHttpServletRequestWrapper.class);
+
     //最大请求报文数
     private final static Integer MAX_CONTEXT_LENHTH = 1000;
 
     private final byte[] body;
 
+    /**
+     * 构造一个封装给定请求的请求对象
+     *
+     * @param request the {@link HttpServletRequest} to be wrapped.
+     *
+     * @throws java.lang.IllegalArgumentException if the request is null
+     */
     public BodyReaderHttpServletRequestWrapper(HttpServletRequest request) {
         super(request);
         //获取请求参数值
         this.body = getBodyString(request).getBytes(Charset.forName("utf-8"));
         //将值写入线程变量中
         try {
-            String paramters = new String(body,"utf-8");
+            String parameters = new String(body,"utf-8");
             if (logger.isDebugEnabled()){
-                logger.debug("请求参数{}" + paramters);
+                logger.debug("请求参数{}" + parameters);
             }
             //获取请求参数
-            BodyReaderFilter.addValueToMyThreadLocal("requestParamters",paramters);
+            BodyReaderFilter.addValueToMyThreadLocal("requestParameters",parameters);
 
         } catch (UnsupportedEncodingException e) {
-            BodyReaderFilter.addValueToMyThreadLocal("requestParamters","{}");
+            BodyReaderFilter.addValueToMyThreadLocal("requestParameters","{}");
         }
 
     }
 
 
     /**
-     *  继承实现getReader()重写逻辑，自定义的HttpServletRequestWrapper将原始的HttpServletRequest对象进行再次封装
-     * @return
+     * 继承实现getReader()重写逻辑，自定义的HttpServletRequestWrapper将原始的HttpServletRequest对象进行再次封装
+     *
      * @throws IOException
+     * @return
      */
     @Override
     public BufferedReader getReader() throws IOException{
@@ -58,8 +67,9 @@ public class BodyReaderHttpServletRequestWrapper extends HttpServletRequestWrapp
 
     /**
      * 将body体中的字符串转换为字节流
-     * @return
+     *
      * @throws IOException
+     * @return
      */
     @Override
     public ServletInputStream getInputStream() throws IOException {
@@ -95,6 +105,7 @@ public class BodyReaderHttpServletRequestWrapper extends HttpServletRequestWrapp
 
     /**
      * 获取httpServletRequest流数据方法
+     *
      * @param request
      * @return
      */

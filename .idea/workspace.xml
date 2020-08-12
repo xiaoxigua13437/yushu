@@ -1,92 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f5e064c-846b-4879-a710-38a82582b65a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/JsonResponseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/LoggerUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/httpclient/HttpClientHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/httpclient/SSLUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/config/ServerSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/controller/CheckUserNameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/dto/ApiAccessLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/dto/ResponseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/filter/BodyReaderHttpServletRequestWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/service/impl/ApiAccessLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/service/impl/ApiAccessLogServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/ScheduledExecutorServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/SystemConstantTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/UDPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/test/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/component/AutoIdempotentInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/component/AutoIdempotentInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/component/WebLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/component/WebLogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/config/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/config/Swagger2Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/config/WebConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/controller/BusinessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/controller/BusinessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/entity/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/entity/CommonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/entity/IErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/entity/IErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/mbg/mapper/PmsBrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/mbg/mapper/PmsBrandMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/nio/ChannelNio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/nio/ChannelNio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/service/PmsBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/service/PmsBrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhaofang/yushu/YushuApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zhaofang/yushu/YushuApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/yushu.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/component/AutoIdempotentInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/component/AutoIdempotentInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/component/WebLogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/component/WebLogAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/config/Swagger2Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/config/Swagger2Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/config/WebConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/config/WebConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/controller/BusinessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/controller/BusinessController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/entity/CommonResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/entity/CommonResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/nio/ChannelNio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhaofang/yushu/nio/ChannelNio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zhaofang/yushu/YushuApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zhaofang/yushu/YushuApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yushu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yushu.iml" afterDir="false" />
+    <list default="true" id="c252900c-85ca-496d-89bb-c4683d640776" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin File" />
-        <option value="Interface" />
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1Ye58nBsgShg1WsIUlSfxDwu4iC" />
+  <component name="ProjectId" id="1fynB0P9bhGyFE532Ah2EICiRi0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -94,115 +21,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="yushu" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.16601562" />
-    <property name="project.structure.side.proportion" value="0.5568581" />
-    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
-  </component>
-  <component name="RestClientSettings">
-    <option name="REQUEST_HISTORY">
-      <list>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8081/business/get/token" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.YushuApplication">
-    <configuration name="ScheduledExecutorServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhaofang.yushu.test.ScheduledExecutorServiceTest" />
-      <module name="yushu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhaofang.yushu.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UDPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhaofang.yushu.test.UDPClient" />
-      <module name="yushu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhaofang.yushu.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhaofang.yushu.test.User" />
-      <module name="yushu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhaofang.yushu.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="YushuApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/YushuApplication.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="YushuApplicationTests.testAssert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yushu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhaofang.yushu.common.httpclient.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zhaofang.yushu" />
-      <option name="MAIN_CLASS_NAME" value="com.zhaofang.yushu.YushuApplicationTests" />
-      <option name="METHOD_NAME" value="testAssert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="YushuApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="yushu" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhaofang.yushu.YushuApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.ScheduledExecutorServiceTest" />
-        <item itemvalue="HTTP Request.YushuApplication#1" />
-        <item itemvalue="Application.User" />
-        <item itemvalue="Application.UDPClient" />
-        <item itemvalue="JUnit.YushuApplicationTests.testAssert" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -221,91 +42,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3f5e064c-846b-4879-a710-38a82582b65a" name="Default Changelist" comment="" />
-      <created>1583290062410</created>
+      <changelist id="c252900c-85ca-496d-89bb-c4683d640776" name="Default Changelist" comment="" />
+      <created>1597199060823</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583290062410</updated>
-      <workItem from="1583290063923" duration="562000" />
-      <workItem from="1583290636394" duration="369000" />
-      <workItem from="1583291012260" duration="11987000" />
-      <workItem from="1583376469034" duration="31214000" />
-      <workItem from="1583747443867" duration="771000" />
-      <workItem from="1583802554452" duration="1073000" />
-      <workItem from="1583804598069" duration="9573000" />
-      <workItem from="1583896586237" duration="139000" />
-      <workItem from="1583896731851" duration="228000" />
-      <workItem from="1583897029165" duration="8991000" />
-      <workItem from="1583915283259" duration="960000" />
-      <workItem from="1583977526585" duration="4178000" />
-      <workItem from="1584078947824" duration="338000" />
-      <workItem from="1584079312443" duration="1194000" />
-      <workItem from="1584321515067" duration="8129000" />
-      <workItem from="1584426007881" duration="1259000" />
-      <workItem from="1584427269910" duration="15887000" />
-      <workItem from="1584514043882" duration="457000" />
-      <workItem from="1584514522234" duration="13317000" />
-      <workItem from="1584600978574" duration="8854000" />
-      <workItem from="1584942763157" duration="316000" />
-      <workItem from="1584943109202" duration="1713000" />
-      <workItem from="1584951088830" duration="2612000" />
-      <workItem from="1585099596319" duration="480000" />
-      <workItem from="1585101631860" duration="316000" />
-      <workItem from="1585190844655" duration="2676000" />
-      <workItem from="1585205455597" duration="7591000" />
-      <workItem from="1585532443604" duration="3962000" />
-      <workItem from="1585558838272" duration="5459000" />
-      <workItem from="1586223508767" duration="9000" />
-      <workItem from="1586309044021" duration="4021000" />
-      <workItem from="1586326859198" duration="11286000" />
-      <workItem from="1586484088021" duration="7487000" />
-      <workItem from="1586829731936" duration="7673000" />
-      <workItem from="1587086482381" duration="9134000" />
-      <workItem from="1587348930071" duration="1181000" />
-      <workItem from="1587433571015" duration="9096000" />
-      <workItem from="1587544707758" duration="1180000" />
-      <workItem from="1587864488992" duration="2873000" />
-      <workItem from="1587959056744" duration="950000" />
-      <workItem from="1588058484167" duration="589000" />
-      <workItem from="1588734063657" duration="8062000" />
-      <workItem from="1589183043492" duration="580000" />
-      <workItem from="1589247771770" duration="13790000" />
-      <workItem from="1589766770690" duration="17497000" />
-      <workItem from="1590027761914" duration="8925000" />
-      <workItem from="1590396843031" duration="3205000" />
-      <workItem from="1590461490570" duration="4102000" />
-      <workItem from="1590976282606" duration="20000" />
-      <workItem from="1590994346200" duration="35000" />
-      <workItem from="1591069168892" duration="798000" />
-      <workItem from="1591069999099" duration="3109000" />
-      <workItem from="1591087175142" duration="960000" />
-      <workItem from="1591176247187" duration="22000" />
-      <workItem from="1591323795445" duration="12588000" />
-      <workItem from="1591347154753" duration="2473000" />
-      <workItem from="1591775183797" duration="216000" />
-      <workItem from="1591775758923" duration="333000" />
-      <workItem from="1591857665949" duration="277000" />
-      <workItem from="1591858166510" duration="79000" />
-      <workItem from="1591948225273" duration="6313000" />
-      <workItem from="1592187894201" duration="15893000" />
-      <workItem from="1592276996747" duration="11475000" />
-      <workItem from="1592357546608" duration="6864000" />
+      <updated>1597199060823</updated>
+      <workItem from="1597199061989" duration="96000" />
     </task>
-    <task id="LOCAL-00001" summary="SpringBoot应用整合ELK实现日志收集">
-      <created>1584500148033</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1584500148033</updated>
-    </task>
-    <task id="LOCAL-00002" summary="SpringBoot 整合Swagger-ui">
-      <created>1584515785604</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1584515785604</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,31 +57,6 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -348,226 +66,19 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="SpringBoot应用整合ELK实现日志收集" />
-    <MESSAGE value="SpringBoot 整合Swagger-ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot 整合Swagger-ui" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="668" y="179" key="#Deployment" timestamp="1584500699285">
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1597199186179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="179" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1584500699285" />
-    <state x="708" y="157" key="#Inspections" timestamp="1584515015628">
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597199186179" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1597199285197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="708" y="157" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1584515015628" />
-    <state x="552" y="177" key="#Notifications" timestamp="1587864616147">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597199285197" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597199225347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="177" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1587864616147" />
-    <state x="552" y="177" key="#Project_Structure" timestamp="1586328772503">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="177" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1586328772503" />
-    <state x="679" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584520052447">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="679" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584520052447" />
-    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1592279345853">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592279345853" />
-    <state x="811" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592277968323">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="811" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592277968323" />
-    <state x="726" y="377" width="468" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592274004274">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="726" y="377" width="468" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1592274004274" />
-    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583810066205">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583810066205" />
-    <state x="837" y="221" key="#xdebugger.evaluate" timestamp="1586310656582">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="837" y="221" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1586310656582" />
-    <state x="560" y="114" key="CommitChangelistDialog2" timestamp="1584515784206">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="560" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584515784206" />
-    <state x="735" y="291" key="DetectedRootsChooserDialog" timestamp="1586339083864">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="735" y="291" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586339083864" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584520455694">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584520455694" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1591069839669">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591069839669" />
-    <state x="769" y="432" key="Github.CreateGistDialog" timestamp="1584501437557">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="769" y="432" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584501437557" />
-    <state x="439" y="231" width="273" height="290" key="Github.ShareDialog" timestamp="1584502393833">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="439" y="231" width="273" height="290" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584502393833" />
-    <state width="1876" height="333" key="GridCell.Tab.0.bottom" timestamp="1592277267013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592277267013" />
-    <state width="1876" height="333" key="GridCell.Tab.0.center" timestamp="1592277267013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="333" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592277267013" />
-    <state width="1876" height="333" key="GridCell.Tab.0.left" timestamp="1592277267012">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="333" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592277267012" />
-    <state width="1876" height="333" key="GridCell.Tab.0.right" timestamp="1592277267013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="333" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592277267013" />
-    <state width="1876" height="333" key="GridCell.Tab.1.bottom" timestamp="1592277267013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="333" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592277267013" />
-    <state width="1876" height="333" key="GridCell.Tab.1.center" timestamp="1592277267013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="333" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592277267013" />
-    <state width="1876" height="333" key="GridCell.Tab.1.left" timestamp="1592277267013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="333" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592277267013" />
-    <state width="1876" height="333" key="GridCell.Tab.1.right" timestamp="1592277267013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="333" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592277267013" />
-    <state width="1876" height="342" key="GridCell.Tab.2.bottom" timestamp="1592276510856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592276510856" />
-    <state width="1876" height="342" key="GridCell.Tab.2.center" timestamp="1592276510856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592276510856" />
-    <state width="1876" height="342" key="GridCell.Tab.2.left" timestamp="1592276510856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592276510856" />
-    <state width="1876" height="342" key="GridCell.Tab.2.right" timestamp="1592276510856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1876" height="342" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592276510856" />
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1592291485744">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592291485744" />
-    <state x="600" y="216" key="NewModule_or_Project.wizard" timestamp="1585191203545">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="600" y="216" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585191203545" />
-    <state x="461" y="151" key="SettingsEditor" timestamp="1591323822833">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591323822833" />
-    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1585534085908">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585534085908" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1585533957102">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585533957102" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1585534085909">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585534085909" />
-    <state x="309" y="101" key="com.intellij.ide.util.TipDialog" timestamp="1592357585264">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="309" y="101" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592357585264" />
-    <state x="679" y="487" key="com.intellij.jarRepository.RepositoryAttachDialog-SEARCH" timestamp="1586339118481">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="679" y="487" key="com.intellij.jarRepository.RepositoryAttachDialog-SEARCH/0.0.1920.1040@0.0.1920.1040" timestamp="1586339118481" />
-    <state x="636" y="256" width="647" height="528" key="find.popup" timestamp="1583747562017">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="636" y="256" width="647" height="528" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583747562017" />
-    <state x="779" y="383" key="git4idea.rebase.GitRebaseDialog" timestamp="1584501978093">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="779" y="383" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584501978093" />
-    <state x="531" y="215" key="new project wizard" timestamp="1585536017067">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="531" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585536017067" />
-    <state x="616" y="235" key="run.anything.popup" timestamp="1592193199134">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592193199134" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/mbg/Generator.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.3.3/mybatis-generator-core-1.3.3.jar!/org/mybatis/generator/api/MyBatisGenerator.class</url>
-          <line>63</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/controller/PmsBrandController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/controller/PmsBrandController.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.4.RELEASE/spring-aop-5.2.4.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class</url>
-          <line>443</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/common/BackProperties.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhaofang/yushu/service/PmsBrandService.java</url>
-          <line>15</line>
-          <properties class="com.zhaofang.yushu.service.PmsBrandService" method="listBrand">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="priKeyFile" />
-      </configuration>
-    </watches-manager>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597199225347" />
   </component>
 </project>

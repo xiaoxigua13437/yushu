@@ -42,7 +42,7 @@ public class BodyReaderFilter implements Filter {
         String requestType = null;
         String method = null;
 
-      /*会出现运行时错误，需要用instanceOF判断
+      /*会出现运行时错误，需要用instanceOf判断
         HttpServletRequest httpServletRequest = (HttpServletRequest)request;*/
         //向下转型
         if (request instanceof HttpServletRequest) {

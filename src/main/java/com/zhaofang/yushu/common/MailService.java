@@ -9,6 +9,9 @@ import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import javax.mail.internet.MimeMessage;
 import java.io.File;
 import java.util.Date;
@@ -19,21 +22,27 @@ import java.util.Date;
  * @author yushu
  * @create 2019-09-23 15:24
  */
-public class MailUtil {
+@Component
+@Service
+public class MailService {
 
-    private static final Logger logger = LoggerFactory.getLogger(MailUtil.class);
+    private static final Logger logger = LoggerFactory.getLogger(MailService.class);
 
 
-    //当前对象实例
+    /*//当前对象实例
     private static MailUtil mailUtil = new MailUtil();
 
     //获取当前对象实例
     public static MailUtil getInstance(){
         return mailUtil;
-    }
+    }*/
+
+    //不能初始化该interface
+    /*private JavaMailSender mailSender = SpringContextHolder.getBean(JavaMailSender.class);*/
 
     @Autowired
     JavaMailSender mailSender;
+
 
 
     /**
